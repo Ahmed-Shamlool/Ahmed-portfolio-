@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed AbdElKhalik - Professional Portfolio</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; padding: 0; background: #f0f4f8; color: #333; transition: all 0.3s ease; }
+    nav { background: linear-gradient(90deg, #0055A5, #0077cc); padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; font-size: 16px; transition: 0.3s; }
+    nav a:hover { color: #FFD700; }
+    nav button { padding: 8px 12px; background: #FFA500; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
+    header { background: #0055A5; color: white; padding: 100px 20px 40px; text-align: center; }
+    header img { border: 5px solid white; border-radius: 50%; width: 160px; height: 210px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+    section { max-width: 1000px; margin: auto; padding: 80px 20px 40px; background: white; margin-top: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+    h2 { color: #0055A5; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 20px; }
+    ul { list-style-type: disc; padding-left: 20px; }
+    footer { background: #333; color: white; text-align: center; padding: 15px; margin-top: 60px; font-size: 14px; }
+    .highlight { color: #FFA500; font-weight: bold; }
+    .container { margin-top: 60px; }
+    .card { background: #fafafa; border: 1px solid #ddd; padding: 20px; margin: 15px 0; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+    @media(max-width:768px){ nav{flex-direction:column;} header{padding:60px 20px 20px;} }
+  </style>
+</head>
+<body>
+  <nav>
+    <div><strong>Ahmed AbdElKhalik</strong></div>
+    <div>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button onclick="toggleLanguage()">AR / EN</button>
+  </nav>
+
+  <header>
+    <img src="Ahmed_Photo_CV.jpg" alt="Ahmed Photo">
+    <h1 data-en="Ahmed AbdElKhalik" data-ar="احمد عبد الخالق">Ahmed AbdElKhalik</h1>
+    <p class="highlight" data-en="Remote Customer Success | IT Support | CRM Specialist | Bilingual Arabic-English" data-ar="نجاح العملاء عن بعد | دعم فني | متخصص نظم العملاء | ثنائي اللغة عربي-إنجليزي">Remote Customer Success | IT Support | CRM Specialist | Bilingual Arabic-English</p>
+    <p>Dubai, UAE | +971 52 570 3332 | <a href="mailto:ahmedshamlool@gmail.com" style="color:white;">ahmedshamlool@gmail.com</a></p>
+  </header>
+
+  <section id="about" class="container">
+    <h2 data-en="About Me" data-ar="عنّي">About Me</h2>
+    <p data-en="Dedicated and results-driven professional with over 10 years of experience in customer service, sales, store management, and technical support." 
+       data-ar="محترف ملتزم وذو نتائج مثبتة مع خبرة تزيد عن 10 سنوات في خدمة العملاء والمبيعات وإدارة المتاجر والدعم الفني.">
+       Dedicated and results-driven professional with over 10 years of experience in customer service, sales, store management, and technical support.
+    </p>
+  </section>
+
+  <section id="experience" class="container">
+    <h2 data-en="Professional Experience" data-ar="الخبرة العملية">Professional Experience</h2>
+    <div class="card">
+      <h3 data-en="DU Telecom, Dubai - Customer Service (2016-Present)" data-ar="دو للاتصالات، دبي - خدمة العملاء (2016-الآن)">DU Telecom, Dubai - Customer Service (2016-Present)</h3>
+      <ul>
+        <li data-en="Exceeded sales targets through data-driven strategies." data-ar="تجاوز أهداف المبيعات من خلال استراتيجيات قائمة على البيانات.">Exceeded sales targets through data-driven strategies.</li>
+        <li data-en="Led customer service teams and trained staff." data-ar="قيادة فرق خدمة العملاء وتدريب الموظفين.">Led customer service teams and trained staff.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="container">
+    <h2 data-en="Projects" data-ar="المشاريع">Projects</h2>
+    <div class="card">
+      <p data-en="Implemented CRM optimization project at DU Telecom." data-ar="تنفيذ مشروع تحسين نظم العملاء في دو للاتصالات.">Implemented CRM optimization project at DU Telecom.</p>
+    </div>
+  </section>
+
+  <section id="certifications" class="container">
+    <h2 data-en="Certifications" data-ar="الشهادات">Certifications</h2>
+    <ul><li>MCSA & MCSE</li><li>CCNA</li></ul>
+  </section>
+
+  <section id="contact" class="container">
+    <h2 data-en="Contact" data-ar="التواصل">Contact</h2>
+    <form action="https://formspree.io/f/xyyrlbzk" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required style="width:100%;padding:10px;margin:5px 0;">
+      <input type="email" name="email" placeholder="Your Email" required style="width:100%;padding:10px;margin:5px 0;">
+      <textarea name="message" placeholder="Your Message" required style="width:100%;padding:10px;margin:5px 0;height:150px;"></textarea>
+      <button type="submit" style="padding:10px 20px; background:#FFA500; border:none; font-weight:bold;">Send Message</button>
+    </form>
+    <p>Email: <a href="mailto:ahmedshamlool@gmail.com">ahmedshamlool@gmail.com</a></p>
+  </section>
+
+  <footer>&copy; 2025 Ahmed AbdElKhalik. All Rights Reserved.</footer>
+
+<script>
+  function toggleLanguage() {
+    document.querySelectorAll('[data-en]').forEach(el => {
+      el.innerText = (el.innerText === el.dataset.en) ? el.dataset.ar : el.dataset.en;
+    });
+  }
+</script>
+</body>
+</html>
